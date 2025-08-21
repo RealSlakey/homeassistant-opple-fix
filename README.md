@@ -31,6 +31,19 @@ docker中安装pyoppleio的版本命令：
 docker exec homeassistant pip install pyoppleio crc16
 ```
 
+configuration.yaml示例
+```yaml
+light:
+  - platform: opple_fix         # 使用我们的自定义集成
+    name: 玄关吊灯
+    host: 192.168.5.101
+    mac: 68:79:c4:00:12:34
+  - platform: opple_fix
+    name: 客厅吊灯
+    host: 192.168.5.51
+    mac: 68:79:c4:00:56:78
+```
+
 # 原README.md：
 ***************
 WARNING: THIS REPOSITORY IS DEPRECATED
