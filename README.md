@@ -44,6 +44,8 @@ light:
     mac: 68:79:c4:00:56:78
 ```
 
+若还是出现不可用或两灯错乱的情况，尝试删除旧实体，在路由中更改并固定灯具IP
+
 # 原README.md：
 ***************
 WARNING: THIS REPOSITORY IS DEPRECATED
