@@ -1,3 +1,37 @@
+# 说明 2025-8-21
+尝试修复以下问题：
+- 减少频繁的不可用状态显示
+- 优化长设备响应等待时间
+- 优化重试机制和状态判断逻辑
+- configuration.yaml中手动配置mac地址，以便生成unique id
+  
+本人测试中，原Repo存在如果配置两盏opple灯，会偶发性出现两盏灯混乱的问题，在HA的issues中也有人提到过，但官方并未解决，使用本fork后，*实测大大减少了不可用状态、两盏灯也暂无出现错乱的情况*，本fork需安装依赖*pyoppleio*
+
+docker中查看pyoppleio的版本命令：
+```shell
+docker exec homeassistant pip show pyoppleio
+```
+查看是否输出类似以下内容：
+```shell
+root@iStoreOS:~# docker exec homeassistant pip show pyoppleio
+Name: pyoppleio
+Version: 1.0.5
+Summary: Python library for interfacing with opple mobile control light
+Home-page: https://github.com/jedmeng/python-oppleio
+Author: jedmeng
+Author-email: jedm@jedm.cn
+License: MIT
+Location: /usr/local/lib/python3.13/site-packages
+Requires: crc16
+Required-by: 
+```
+
+docker中安装pyoppleio的版本命令：
+```shell
+docker exec homeassistant pip install pyoppleio crc16
+```
+
+# 原README.md：
 ***************
 WARNING: THIS REPOSITORY IS DEPRECATED
 ====================================
