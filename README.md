@@ -47,6 +47,9 @@ light:
 
 若还是出现不可用或两灯错乱的情况，尝试删除旧实体，在路由中更改并固定灯具IP
 
+## 已知问题
+- 会导致homebridge中，无法该集成的灯具显示无响应，期待大佬解决
+
 # 原README.md：
 ***************
 WARNING: THIS REPOSITORY IS DEPRECATED
