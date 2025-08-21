@@ -1,4 +1,5 @@
-# 说明 2025-8-21
+# 2025-8-21
+## 解决问题
 本Repo通过KIMI修改+人工修改
 以试图修复以下问题：
 - 减少频繁的不可用状态显示
@@ -8,6 +9,7 @@
   
 本人测试中，原Repo存在如果配置两盏opple灯，会偶发性出现两盏灯混乱的问题，在HA的issues中也有人提到过，但官方并未解决，使用本fork后，*实测大大减少了不可用状态、两盏灯也暂无出现错乱的情况*，本fork需安装依赖*pyoppleio*
 
+## 安装相关
 docker中查看pyoppleio的版本命令：
 ```shell
 docker exec homeassistant pip show pyoppleio
