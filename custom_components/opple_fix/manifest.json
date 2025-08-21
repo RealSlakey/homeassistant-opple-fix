@@ -1,0 +1,9 @@
+{
+  "domain": "opple_fix",
+  "name": "Opple Light Fix",
+  "documentation": "https://github.com/yourname/ha-opple-fix",
+  "requirements": ["pyoppleio-legacy"],
+  "codeowners": ["@yourname"],
+  "iot_class": "local_polling",
+  "version": "1.0.0"
+}
